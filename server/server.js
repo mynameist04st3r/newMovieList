@@ -5,7 +5,7 @@ const knex = require('knex')(require('./knexfile.js')['development']);
 
 
 app.get('/', (req, res) => {
-  res.send('Here it is.');
+  res.send('Server running.');
 })
 
 app.get('/movies', (req, res) => {
@@ -16,5 +16,5 @@ app.get('/movies', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log('Server running at http://localhost: ' + port);
+  console.log('Server running at http://localhost:' + port);
 });
